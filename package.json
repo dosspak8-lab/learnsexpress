@@ -7,9 +7,13 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "dev": "node --watch index.js",
+    "tailwind:dev":"npx @tailwindcss/cli -i ./src/css/style.css -o ./public/css/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^5.3.0"
+    "@tailwindcss/cli": "^4.3.4",
+    "express": "^5.3.0",
+    "tailwindcss": "^4.3.4"
   }
 }
